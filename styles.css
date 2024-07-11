@@ -65,6 +65,9 @@ header{
 .aa{
     margin: 30px;
 }
+.style{
+    text-decoration: none;
+}
 
 .image{
    object-fit: cover;
@@ -120,7 +123,7 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    text-decoration: none;
 }
 
 button.see-more{
@@ -271,6 +274,42 @@ footer h2{
 .nav-links li a {
     color: white;
     text-decoration: none;
+}
+#description, #gallery, #food-spots {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.line {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: calc(50% - 10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#food-spots ul {
+    list-style: non;
+    padding: 0;
+}
+
+#food-spots li {
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 @media (max-width: 768px) {
     .menu-icon {
